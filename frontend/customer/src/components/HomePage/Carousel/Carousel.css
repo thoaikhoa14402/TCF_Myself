@@ -1,0 +1,9 @@
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  --swiper-pagination-color: #969695;
+  --swiper-pagination-bullet-size: 2rem;
+  --swiper-pagination-bullet-height: 0.6rem;
+  --swiper-pagination-bullet-horizontal-gap: 6px;
+  border-radius: 0px;
+}

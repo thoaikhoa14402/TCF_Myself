@@ -1,0 +1,133 @@
+.container {
+  margin-top: 4.5rem;
+}
+
+.title {
+  font-family: "Montserrat";
+  background-clip: text;
+  /* text-fill-color: transparent; */
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
+  font-size: 4rem;
+  background: linear-gradient(
+    180deg,
+    #ff0000 33%,
+    #9e0000 46.88%,
+    #610000 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 2em;
+}
+
+.wrapper {
+  padding: 1.2rem 4.6rem;
+  display: flex;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.wrapper div img {
+  transition: all 0.3s ease;
+}
+
+.wrapper .product {
+  position: relative;
+  width: 34rem;
+  height: 38rem;
+  /* overflow: hidden; */
+}
+
+.wrapper .product .background_product {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .product .fv_product_1,
+.wrapper .product .fv_product_2,
+.wrapper .product .fv_product_3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0rem;
+  left: 0;
+  opacity: 1;
+}
+
+.wrapper .product .fv_product_1 {
+  top: -0.3rem;
+}
+
+.wrapper .product .fv_product_2 {
+  top: -0.8rem;
+  left: 1rem;
+}
+
+.wrapper .product .fv_product_3 {
+  left: 0.3rem;
+}
+
+.wrapper .product .background_hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  /* z-index: -10; */
+}
+
+.wrapper .product::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+  z-index: 1;
+}
+
+.product-overlay-1,
+.product-overlay-2,
+.product-overlay-3 {
+  /* background-color: aqua; */
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 2;
+}
+/* Handle when user hover on */
+
+.wrapper .product:hover .background_hover {
+  opacity: 1;
+}
+
+.wrapper .product:hover::before {
+  opacity: 1;
+  box-shadow: 0rem 0rem 50rem rgba(255, 255, 255, 1) inset;
+}
+
+.wrapper .product:hover .product-overlay-1 {
+  opacity: 1;
+  top: 2rem;
+  left: -3rem;
+  transform: scale(1.45);
+}
+
+.wrapper .product:hover .product-overlay-2 {
+  opacity: 1;
+  top: -2rem;
+  left: -2rem;
+  transform: scale(1.45);
+}
+
+.wrapper .product:hover .product-overlay-3 {
+  opacity: 1;
+  top: -2rem;
+  left: -1.5rem;
+  transform: scale(1.45);
+}

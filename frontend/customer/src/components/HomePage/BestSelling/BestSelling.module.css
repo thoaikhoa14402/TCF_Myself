@@ -1,0 +1,30 @@
+.wrapper {
+  margin-top: 4.5rem;
+}
+
+.title {
+  font-family: "Montserrat";
+  background-clip: text;
+  /* text-fill-color: transparent; */
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
+  font-size: 4rem;
+  background: linear-gradient(
+    180deg,
+    #ff0000 33%,
+    #9e0000 46.88%,
+    #610000 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 2em;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 3.2rem;
+  padding: 2rem 4.6rem;
+}

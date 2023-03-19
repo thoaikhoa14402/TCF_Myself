@@ -1,0 +1,14 @@
+/* .category-img {
+  width: 80%;
+  height: 37.2rem;
+} */
+
+/* .category-img {
+  width: 100%;
+  height: 37.2rem;
+} */
+
+.category-img {
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+}

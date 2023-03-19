@@ -1,0 +1,71 @@
+.wrapper {
+  text-align: center;
+  position: relative;
+  margin-top: 9rem;
+}
+
+.title {
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 800;
+  font-size: 4rem;
+  background: linear-gradient(
+    180deg,
+    #ff0000 33%,
+    #9e0000 46.88%,
+    #610000 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.description {
+  margin-top: 2.4rem;
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
+.content {
+  margin: 2rem 0rem 3.4rem 0rem;
+  line-height: 2.4rem;
+}
+
+.wrapper button {
+  font-family: inherit;
+  background-color: red;
+  border: 2.4px solid red;
+  border-radius: 2px;
+  padding: 0.2rem 2.8rem;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.wrapper button:hover {
+  color: red;
+  background: #fff;
+  cursor: pointer;
+}
+
+.coffee-beans {
+  position: absolute;
+  display: flex;
+  width: 40.1rem;
+  justify-content: space-between;
+  left: 50%;
+  top: 3rem;
+  transform: translateX(-50%);
+}
+
+.coffee-plants {
+  position: absolute;
+  display: flex;
+  width: 109.7rem;
+  justify-content: space-between;
+  left: 50%;
+  top: -7.2rem;
+  transform: translateX(-50%);
+}

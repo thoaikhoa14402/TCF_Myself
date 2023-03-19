@@ -1,0 +1,149 @@
+.container {
+  background-image: url(../../../assets/image/authentication/background_login.jpg);
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  position: fixed;
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+  padding: 2.5rem;
+  background-color: #fff;
+  width: 65rem;
+  height: 54rem;
+  margin: 0 auto;
+  position: relative;
+  top: 7.5rem;
+}
+
+.register-form input {
+  display: block;
+  width: 38rem;
+  height: 2.4rem;
+  border-radius: 25px;
+  border: 3px solid #000;
+  font-family: "Montserrat";
+  padding: 2rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  outline: none;
+}
+
+.register-form input[type="password"] {
+  font-family: Verdana;
+  font-size: 2.4rem;
+}
+
+.register-form input[type="password"]:placeholder-shown {
+  font-size: 1.5rem;
+  font-family: "Montserrat";
+}
+
+.register-form input::placeholder {
+  color: #000;
+}
+
+.register-form .logo {
+  margin: 2.4rem 0rem 1.2rem 0rem;
+  text-align: center;
+}
+
+.register-form .logo > img {
+  width: 60%;
+}
+
+.register-form .forgot-password {
+  align-self: flex-end;
+  margin-right: 12rem;
+  margin-top: -1.4rem;
+  color: red;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.register-form .forgot-password:hover {
+  cursor: pointer;
+}
+
+.register-form .register-btn {
+  margin-top: 1.25rem;
+  background-color: red;
+  text-align: center;
+  color: #fff;
+  width: 38rem;
+  border-radius: 25px;
+  border: 3px solid red;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1rem 0rem;
+  transition: all 0.3s ease;
+}
+
+.register-form .register-btn:hover {
+  background-color: #fff;
+  color: red;
+  cursor: pointer;
+}
+
+.register-form p {
+  margin-top: -1rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.register-form p > span {
+  font-weight: 700;
+  color: red;
+  margin-left: 0.6rem;
+  cursor: pointer;
+}
+
+.register-form .backArrowIcon {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/*  Error validation */
+.register-form label {
+  position: relative;
+}
+.register-form input.error {
+  border-color: red;
+}
+
+.register-form span.err-msg {
+  color: red;
+  position: absolute;
+  left: 2rem;
+  bottom: -2rem;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.register-form .err-icon {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}

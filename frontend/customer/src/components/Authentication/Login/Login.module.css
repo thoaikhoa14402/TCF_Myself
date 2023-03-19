@@ -1,0 +1,144 @@
+.container {
+  background-image: url(../../../assets/image/authentication/background_login.jpg);
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  position: fixed;
+}
+
+.backdrop {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+  padding: 2.5rem;
+  background-color: #fff;
+  width: 65rem;
+  height: 54rem;
+  margin: 0 auto;
+  position: relative;
+  top: 7.5rem;
+}
+
+.login-form input {
+  display: block;
+  width: 38rem;
+  height: 2.4rem;
+  border-radius: 25px;
+  border: 3px solid #000;
+  font-family: "Montserrat";
+  padding: 2rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  outline: none;
+}
+
+.login-form input[type="password"]:placeholder-shown {
+  font-size: 1.5rem;
+  font-family: "Montserrat";
+}
+
+.login-form input[type="password"] {
+  font-family: Verdana;
+  font-size: 2.4rem;
+}
+
+.login-form input::placeholder {
+  color: #000;
+}
+
+.login-form .logo {
+  margin: -2.4rem 0rem 1.2rem 0rem;
+  text-align: center;
+}
+
+.login-form .logo > img {
+  width: 60%;
+}
+
+.login-form .forgot-password {
+  align-self: flex-end;
+  margin-right: 12rem;
+  margin-top: -1.4rem;
+  color: red;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.login-form .forgot-password:hover {
+  cursor: pointer;
+}
+
+.login-form button {
+  margin-top: -1.25rem;
+  background-color: red;
+  text-align: center;
+  color: #fff;
+  width: 38rem;
+  border-radius: 25px;
+  border: 3px solid red;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1rem 0rem;
+  transition: all 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #fff;
+  color: red;
+  cursor: pointer;
+}
+
+.login-form p {
+  margin-top: -1rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.login-form p > span {
+  font-weight: 700;
+  color: red;
+  margin-left: 0.6rem;
+  cursor: pointer;
+}
+
+.login-form > input.password-icon {
+  font-family: Verdana;
+  /* letter-spacing: 0.1em; */
+  font-size: 2.4rem;
+}
+
+/*  Error validation */
+.login-form label {
+  position: relative;
+}
+.login-form input.error {
+  border-color: red;
+}
+
+.login-form span.err-msg {
+  color: red;
+  position: absolute;
+  left: 2rem;
+  bottom: -2rem;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.login-form .err-icon {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}

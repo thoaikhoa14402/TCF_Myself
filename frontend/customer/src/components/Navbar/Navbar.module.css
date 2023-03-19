@@ -1,0 +1,168 @@
+.nav-bar {
+  display: flex;
+  position: sticky;
+  padding: 1.5rem 4rem;
+  gap: 8rem;
+  top: 0;
+  width: 100%;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  z-index: 10;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  text-transform: uppercase;
+}
+/* a = NavLink*/
+.links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700; /* = font-style: bold */
+  font-size: 1.4rem;
+}
+
+.active {
+  color: red;
+}
+
+.nav-footer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-left: auto;
+}
+
+/* a = Link */
+.nav-footer > .login-btn,
+.nav-footer > .register-btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: black;
+  border: 3px solid black;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 15.8rem;
+  border-radius: 30px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-footer > .login-btn:hover,
+.nav-footer > .register-btn:hover {
+  background-color: red;
+  border-color: red;
+  color: #fff;
+}
+
+.nav-footer button {
+  background-color: #fff;
+  border: none;
+}
+
+.login-btn {
+  background-color: white;
+}
+
+.nav-footer .register-btn {
+  background-color: black;
+  color: #fff;
+}
+
+/* --------------- when using tablet ---------------- */
+/*begin */
+.menu {
+  display: none;
+  cursor: pointer;
+}
+
+.menu:hover {
+  color: red;
+}
+
+.dropdown {
+  display: none;
+  position: relative;
+  user-select: none;
+}
+.dropdown-list {
+  position: absolute;
+  top: 5rem;
+  right: 0rem;
+  white-space: nowrap;
+  background-color: #fff;
+  padding: 1.6rem;
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+  /* Hiệu ứng chuyển khi click vào nút menu ,mặc định là nút đăng ký đăng nhập mất */
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.dropdown-list-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.dropdown-list-item {
+  color: black;
+  text-decoration: none;
+}
+
+.openDropdownList {
+  display: none;
+}
+.openDropdownList:checked + .dropdown-list {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*end*/
+
+/* --------------- when using tablet ---------------- */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  /* Logo */
+  .nav-bar div img {
+    display: none;
+  }
+  /* Register button */
+  .nav-footer .register-btn {
+    display: none;
+  }
+  /* Login button */
+  .nav-footer .login-btn {
+    display: none;
+  }
+  /* Menu */
+  .menu {
+    display: block;
+    font-size: 2rem;
+    position: relative;
+  }
+  .menu:hover {
+    cursor: pointer;
+  }
+
+  /* Nav bar layout */
+  .nav-bar {
+    gap: 1rem;
+  }
+
+  .dropdown {
+    display: block;
+  }
+}
+
+.nav-footer button {
+  font-size: 2.4rem;
+}

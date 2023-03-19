@@ -1,0 +1,335 @@
+.container {
+    margin-top: 4rem;
+    width: 100%;
+    justify-content: center;
+    gap: 10rem;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.first-block {
+    width: 50rem;
+}
+
+.first-block > .deliveryInformation {
+    box-shadow: 0px 1px 12px rgba(0,0,0,0.5);
+}
+
+.second-block {
+    width: 55rem;
+}
+
+.second-block > .deliveryInformation {
+    box-shadow: 0px 1px 12px rgba(0,0,0,0.5);
+
+}
+
+button.currentDeliveryMethod {
+    background-color: red;
+    color: white;
+    padding: 1rem;
+    border: 2px solid red;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    /* transition: all 0.2s ease-in-out; */
+}
+
+/* button.currentDeliveryMethod:hover
+{
+    background-color: #fff;
+    color: red;
+    cursor: pointer;
+} */
+
+button.anotherDeliveryMethod {
+    
+    background-color: #fff;
+    color: red;
+    padding: 1rem;
+    border: 2px solid red;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    /* transition: all 0.2s ease-in-out; */
+}
+
+/* button.anotherDeliveryMethod:hover
+{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+} */
+
+
+.deliveryInformation {
+    margin-top: 2rem;
+}
+
+.information {
+    text-transform: uppercase;
+    text-align: left;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+
+input {
+    display: block;
+    width: 100%;
+    padding: 1.6rem 5.4rem;
+    border: 0.1px solid grey;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, A;
+    font-weight: 500;
+    outline: none;
+}
+input::placeholder
+{
+    color: black;
+    font-weight: 400;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, A;
+}
+
+div.input-name, div.input-phoneNumber, div.input-address, div.input-note, div.input-voucher
+{
+    position: relative;
+}
+
+
+div.input-name > .user-icon,
+div.input-phoneNumber > .phone-icon,
+div.input-address > .location-icon,
+div.input-note > .note-icon,
+div.input-voucher > .voucher-icon
+{
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    left: 4%;
+    transform: translateY(-50%);
+}
+
+
+.ship-cod, .momo {
+    display: flex;
+    align-items: center;
+    margin: 1.4rem 0rem 1.6rem 0rem; 
+    gap: 1rem;
+    font-size: 1.4rem; 
+}
+.momo {
+    padding-bottom: 2rem;
+}
+
+input[type='radio'] {
+    display: inline-block;
+    margin-left: 2rem;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    background-color: #D9D9D9;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  input[type='radio']:checked::after {
+    content: '';
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border: none;
+    border-radius: 50%;
+    background-color: red;
+    visibility: visible;
+  }
+  
+
+
+.select-stores
+{
+    position: relative;
+}
+
+.select-stores > .store-icon {
+    margin-left: 2rem;
+    font-size: 1.4em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+select {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    font-weight: 400;
+    padding: 1.6rem 6.2rem;
+    outline: none;
+    border: 0;
+}
+
+
+.store-icon {
+    position: absolute; 
+}
+
+.input-voucher > input {
+    padding-left: 6.6rem;
+    border: 0;
+}
+
+/* ordered products */
+div.orderedProducts {
+    padding: 0.6rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    border-bottom: 2px solid grey;
+}
+
+div.orderedProducts > .product-img img {
+    height: 5rem;
+    border-radius: 50%;
+}
+
+div.orderedProducts > span.product-quantity {
+    font-size: 1.4rem;
+}
+
+div.orderedProducts > div.product-details
+{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    min-width: 25rem;
+}
+
+
+div.orderedProducts > div.product-details > .product-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+div.orderedProducts > div.product-details > .product-note {
+    font-size: 1rem;
+    width: 100%;
+}
+
+div.orderedProducts > div.product-details > .product-price {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 0.8rem;
+    color: red;
+}
+
+
+
+div.orderedProducts > div.editQuantity > button.add-btn,
+div.orderedProducts > div.editQuantity > button.decrease-btn  {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  align-self: stretch;
+}
+
+div.orderedProducts > .editQuantity > button.add-btn  > .add-icon,
+div.orderedProducts > .editQuantity > button.decrease-btn > .decrease-icon {
+  font-size: 2rem;
+}
+
+div.orderedProducts > .editQuantity
+ {
+    margin-left: auto;
+ }
+  
+
+div.totalBill {
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 1rem 2rem 2rem 2rem;
+}
+
+div.totalBill > span.totalQuantity {
+}
+
+div.totalBill > div.detailPrice {
+    margin-left: 14rem;
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 1.4rem;
+}
+
+div.totalBill > div.detailPrice > div {
+    display: flex;   
+    justify-content: space-between;
+}
+
+div.totalBill > div.detailPrice > div > span
+{
+    text-align: right;
+}
+
+div.totalBill > div.detailPrice > div:last-child{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+div.totalBill > div.detailPrice > div:last-child > span.totalPrice
+{
+    color: red;
+}
+
+
+
+button.orderButton {
+    background-color: red;
+    color: white;
+    margin-top: 3rem;
+    padding: 1rem;
+    border: 2px solid red;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button.orderButton:hover
+{   
+    background-color: #fff;
+    color: red;
+}
+
+
+.white-bg-red-border {
+    background-color: #fff;
+    color: red;
+    padding: 1rem;
+    border: 2px solid red;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}

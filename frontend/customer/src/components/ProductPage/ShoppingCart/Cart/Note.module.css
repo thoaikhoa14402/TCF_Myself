@@ -1,0 +1,39 @@
+.title {
+  width: 100%;
+  height: 5rem;
+  background-color: black;
+  position: relative;
+}
+
+.note-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffff;
+  font-size: 2rem;
+  margin: 0 2rem 0 2rem;
+}
+
+.note-title {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-left: 6rem;
+}
+
+.message {
+  height: 12rem;
+  background-color: #fff;
+}
+
+.message textarea {
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 1.8rem 2rem;
+  outline: none;
+  resize: none;
+}

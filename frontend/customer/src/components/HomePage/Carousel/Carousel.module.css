@@ -1,0 +1,25 @@
+.swiper {
+  border: none;
+}
+
+/* Để lớp giả before ăn theo */
+.swiper-slide {
+  position: relative;
+}
+
+/* Ăn theo thằng cha swiper-slide, tạo pseudo-element before = kích thước với cha, để tạo lớp phủ */
+
+.swiper-slide::before {
+  content: "";
+  box-shadow: 0rem -10rem 20rem rgba(0, 0, 0, 0.2) inset;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.swiper-slide img {
+  height: calc(100vh - 7.2rem);
+  width: 100%;
+}

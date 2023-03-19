@@ -1,0 +1,99 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 24rem;
+  height: 38rem;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.container .card-img {
+  height: 24rem;
+  overflow: hidden;
+}
+
+.container .card-img img {
+  width: 100%;
+  transition: all 0.4s ease;
+}
+
+.container .card-img img:hover {
+  transform: scale(1.15);
+}
+
+.container hr {
+  width: 80%;
+  border: 0.1px solid #000;
+  background-color: #000;
+}
+
+.container .name {
+  font-weight: 700;
+  max-width: 80%;
+  margin-bottom: 0.2rem;
+  text-align: center;
+}
+
+.container .price {
+  margin: 0;
+  color: red;
+  font-weight: 400;
+}
+
+.container .add-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+  border: none;
+  margin: 0rem 2rem 2.4rem 0rem;
+}
+
+.container button {
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  font-size: 2.8rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.container button > svg {
+  overflow: visible;
+}
+
+.container button > svg rect {
+  transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+.container button > svg rect:nth-child(1) {
+  stroke-width: 0.2rem;
+  stroke: red;
+}
+
+.container button > svg rect:nth-child(2) {
+  transform-origin: 50% 70%;
+}
+
+.container button:hover > svg rect:nth-child(1) {
+  fill: white;
+}
+
+.container button:hover > svg rect:nth-child(2) {
+  fill: red;
+  rotate: 45deg;
+  scale: 0.9;
+  translate: 2% -1%;
+}
+
+.container button:hover > svg rect:nth-child(3) {
+  fill: red;
+  rotate: 46deg;
+  scale: 0.9;
+  translate: 37% -7%;
+}

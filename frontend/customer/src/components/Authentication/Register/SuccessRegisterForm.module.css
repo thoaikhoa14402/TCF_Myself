@@ -1,0 +1,62 @@
+.success-register-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+  padding: 2.5rem;
+  background-color: #fff;
+  width: 65rem;
+  height: 38rem;
+  margin: 0 auto;
+  position: relative;
+  top: 7.5rem;
+}
+
+.success-register-form .logo {
+  margin: 0rem 0rem 1.2rem 0rem;
+  text-align: center;
+}
+
+.logo > img {
+  width: 60%;
+}
+
+.success-tick-icon {
+  margin-top: -2rem;
+}
+
+.success-register-form .login-btn {
+  margin-top: -2rem;
+  background-color: red;
+  text-align: center;
+  color: #fff;
+  width: 38rem;
+  border-radius: 25px;
+  border: 3px solid red;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1rem 0rem;
+  transition: all 0.3s ease;
+}
+
+.success-register-form .login-btn:hover {
+  background-color: #fff;
+  color: red;
+  cursor: pointer;
+}
+
+.success-register-form p {
+  margin-top: -1rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.success-register-form p > span {
+  font-weight: 700;
+  color: red;
+  margin-left: 0.6rem;
+  cursor: pointer;
+}

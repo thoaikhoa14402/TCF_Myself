@@ -1,0 +1,44 @@
+.container {
+  width: 15vw;
+  margin: 2rem 0rem 0rem 6rem;
+  display: inline-block;
+  color: black;
+  position: sticky;
+  top: 10rem;
+  /* border: 1px solid; */
+}
+
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  margin: 0 auto;
+}
+
+.side-bar .title {
+  margin: 1rem 0rem;
+}
+
+.side-bar a {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.side-bar a:active {
+  color: red;
+}
+
+.side-bar b {
+  font-size: 2.2rem;
+}
+
+.side-bar span {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.side-bar .product-type {
+  padding-bottom: 0.6rem;
+}
